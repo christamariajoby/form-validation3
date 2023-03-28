@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="validateform.js"></script>
+</head>
+<body>
+    <form action="" name="myform" onsubmit="return validate()">
+    <h1>Register here</h1>
+    Username : <input type="text" name="name"><br><br>
+    Email: <input type="text" name="email"><br><br>
+    Enter password: <input type="password" name="password1"><br><br>
+    Re-enter password: <input type="password" name="password2"><br><br>
+    
+    <button type="submit">submit</button>
+    </form>
+</body>
+</html>
+
+
+
+<!--DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validate(){
+           var x=document.myform.email.value;
+           var atposition=x.indexOf("@");
+           var dotposition= x.lastIndexOf(".");
+           if(atposition<1 || dotposition<atposition+2 || dotposition+2>x.length){
+            alert("please enter a valid email id");
+           }
+        }
+    </script>
+</head>
+<body>
+    <form action="" name="myform" onsubmit="return validate()">
+    Email: <input type="text" name="email"><br><br>
+    <button type="submit">submit</button>
+    </form>
+</body>
+</html>
+
